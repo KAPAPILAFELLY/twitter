@@ -1,10 +1,10 @@
 import React from "react";
 import image7 from "../../images/image 1 (2).svg";
-import vector2 from "../../images/vector.png";
+import vector2 from "../../images/Vector.png";
 import tweetprofile2 from "../../images/tweet-profile-photo.png";
-import vector3 from "../../images/vector.png";
+import vector3 from "../../images/Vector.png";
 import image8 from "../../images/image 1 (4).svg"
-import vector4 from "../../images/vector.png";
+import vector4 from "../../images/Vector.png";
 import more1 from "../../images/More-2.svg"
 import more2 from "../../images/More-2.svg"
 import more3 from "../../images/More-2.svg"
