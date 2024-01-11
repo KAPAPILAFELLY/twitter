@@ -95,7 +95,7 @@ body{
 }
 .button {
     text-transform: capitalize;
-    padding: .7rem 1.5rem;
+    padding: .5rem 1.5rem;
     border: none;
     border-radius: 50px;
     background-color: #1D9BF0;
@@ -193,3 +193,110 @@ body{
     justify-content: center;
     gap: 20px;
 }
+
+.listMenu li {
+    margin: 1.5rem 1rem;
+    font-size: 1rem;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: left; 
+    font-size: 1.3rem;      
+}
+.buttonSidebar{
+    width: 200px;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 1.5rem;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1rem;
+}
+.buttonTrends{
+    width: 75px;
+    border-radius: 50px;
+    padding: 7px;
+    color: rgb(8, 6, 6);
+    
+}
+
+
+.Trends-lists{
+    margin: 1.5rem 1rem;
+    background-color: #2F3336;
+    border: #2F3336;
+    list-style: none;
+    gap: 5px;
+    border-radius: 20px;
+    width: 355px;
+    padding: 1.5rem 1rem;
+    text-align: left;
+}
+
+.lists {
+    margin: 1.5rem 1rem;
+    list-style: none;
+}
+
+.trends{
+    margin: 1.5rem 1rem;
+}
+
+.turkey{
+margin: 1.5rem 1rem;
+}
+
+.style-text{
+    margin: 1.5rem 1rem;
+    color: #1D9BF0;
+}
+.tweeter-paramettre{
+    background-color: #2F3336;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+    width: 355px
+    
+   }
+
+.tweeter-follow{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 1.5rem 1rem;
+}
+.button b{
+    margin-bottom: 15px;
+    justify-content: center;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100px;
+  height: 50px;
+  border: 1px solid black;
+}
+.Trends-input {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 1.5rem;
+    width: 355px;
+    background-color: #2F3336;
+    color: aliceblue;
+    font-size: 1.1rem;
+  }
+  .tweet-Trends{
+    
+  }
+  .Trends{
+    display: flex;
+    border-collapse: collapse;
+  }
+  .Trends-lists{
+    
+  }

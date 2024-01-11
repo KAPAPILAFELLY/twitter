@@ -1,10 +1,25 @@
 import React from 'react';
-
+import Header from '../components/header/header';
+import Tweeteditor from '../components/tweet-editor/tweet-editor';
+import Tweets from '../components/tweets/tweets';
+import Sidebar from '../components/Sidebar/Sidebar';
+import Trends from '../components/Trends/Trends';
 function Home() {
-  return (
+  return ( 
+    <>
+    <Sidebar/>
+    
+
     <main className="timeline">
-      <h1>Timeline here</h1>
+      <Header />
+      <Tweeteditor />
+      <Tweets/>
+      {/* <Tweets2/> */}
+      
     </main>
+    <Trends/>
+    </>
+    
   );
 }
 
