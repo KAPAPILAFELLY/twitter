@@ -198,7 +198,6 @@ body{
     margin: 1.5rem 1rem;
     font-size: 1rem;
     list-style: none;
-    align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -206,7 +205,10 @@ body{
     align-items: center;
     justify-content: center;
     text-align: left; 
-    font-size: 1.3rem;      
+    font-size: 1.3rem;   
+    justify-content: left;
+    
+   
 }
 .buttonSidebar{
     width: 200px;
@@ -290,13 +292,15 @@ margin: 1.5rem 1rem;
     color: aliceblue;
     font-size: 1.1rem;
   }
-  .tweet-Trends{
-    
-  }
+
   .Trends{
     display: flex;
     border-collapse: collapse;
   }
-  .Trends-lists{
-    
+  .trend-for{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
   }
+  

@@ -24,15 +24,23 @@ export default function Trends() {
                         <h2 className="tweet-title-author">Trends for you</h2><img src="" alt="" />
 
                         <div className="lists">
+                            <div className="trend-for">
+                                <span className="tweet-title-details">Trending in turkey</span>
+                                <img src={more1} alt="" />
+                            </div>
 
-                            <span className="tweet-title-details">Trending in turkey</span><img src={more1} alt="" />
+
                             <h2 className="tweet-title-author">#SQUID</h2>
                             <span className="tweet-title-details">2,066 Tweets</span>
 
                         </div>
                         <div className="trends">
+                            <div className="trend-for">
+                                <span className="tweet-title-details">Trending in turkey</span>
+                                <img src={more2} alt="" />
+                            </div>
 
-                            <span className="tweet-title-details">Trending in turkey</span><img src={more2} alt="" />
+
                             <h2 className="tweet-title-author">#SQUID</h2>
                             <span className="tweet-title-details">2,006 Tweets</span>
 
@@ -41,14 +49,20 @@ export default function Trends() {
                         <div className="turkey">
                             <div className="Tweet-content">
 
-                                <span className="tweet-title-details">Trending in turkey</span><img src={more3} alt="" />
+                                <div className="trend-for">
+                                    <span className="tweet-title-details">Trending in turkey</span>
+                                    <img src={more2} alt="" />
+                                </div>
                                 <h2 className="tweet-title-author">#SQUID</h2>
                                 <span className="tweet-title-details">2,006 Tweets</span>
 
 
                             </div>
-
-                            <span className="tweet-title-details">Trending in turkey</span><img src={more4} alt="" />
+                            <div className="trend-for">
+                            <span className="tweet-title-details">Trending in turkey</span>
+                            <img src={more4} alt="" />
+                            </div>
+                            
                             <h2 className="tweet-title-author">#SQUID</h2>
                             <span className="tweet-title-details">2,006 Tweets</span>
 
