@@ -1,6 +1,6 @@
 import React from "react";
 import twitter from "../../images/Twitter.svg";
-import homeFill from "../../images/Home-fill.svg";
+import homeFill from "../../images/Home-Fill.svg";
 import explore from "../../images/Explore.svg";
 import notifications from "../../images/Notifications.svg";
 import messags from "../../images/Messages.svg";
