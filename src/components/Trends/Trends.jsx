@@ -9,6 +9,8 @@ import more1 from "../../images/More-2.svg"
 import more2 from "../../images/More-2.svg"
 import more3 from "../../images/More-2.svg"
 import more4 from "../../images/More-2.svg"
+import settings from "../../images/Settings.svg"
+import search from "../../images/Search.svg"
 
 export default function Trends() {
     return (
@@ -16,14 +18,19 @@ export default function Trends() {
             <div className="Trends">
 
                 <div className="tweet-form">
-                    <input className="Trends-input" type="text" name="" id="" placeholder="Serach Tweeter" />
+                    <div className="Trends-input flex gap-1">
+                        <img src={search} alt="" />
+                        <input className="bg-transparent border-none w-full outline-none" type="text" name="" id="" placeholder="Serach Tweeter" />
+                    </div>
 
 
                     <div className="Trends-lists">
+                        <div className="settings">
+                            <h2 className="tweet-title-lists">Trends for you</h2>
+                            <img src={settings} alt="logo" />
+                        </div>
 
-                        <h2 className="tweet-title-author">Trends for you</h2><img src="" alt="" />
-
-                        <div className="lists">
+                        <div className="trends">
                             <div className="trend-for">
                                 <span className="tweet-title-details">Trending in turkey</span>
                                 <img src={more1} alt="" />
@@ -59,10 +66,10 @@ export default function Trends() {
 
                             </div>
                             <div className="trend-for">
-                            <span className="tweet-title-details">Trending in turkey</span>
-                            <img src={more4} alt="" />
+                                <span className="tweet-title-details">Trending in turkey</span>
+                                <img src={more4} alt="" />
                             </div>
-                            
+
                             <h2 className="tweet-title-author">#SQUID</h2>
                             <span className="tweet-title-details">2,006 Tweets</span>
 
@@ -71,71 +78,63 @@ export default function Trends() {
                             <p>Show more</p>
                         </div>
                     </div>
-                    <div className="tweeter-paramettre">
-                        <h2 className="tweet-title-author">Trends for you</h2>
-                        <img src="" alt="" />
-                        <div className="tweet">
+
+                    <div className="Trends-lists">
+                        <h2 className="tweet-title-lists">Trends for you</h2>
+
+                        <div className="flex gap-4 my-8">
                             <div className="tweet-avatar">
                                 <img src={image7} alt="" />
                             </div>
-                            <div className="Tweet-content">
-                                <div className="tweet-body">
-                                    <div className="tweet-tittle">
-                                        <h2 className="tweet-title-author">The New York Times</h2>
-                                        <img src={vector2} alt="" />
-                                        <p className="tweet-title-details">@nytimess</p>
-                                    </div>
 
+                            <div className="flex flex-col items-start content-center">
+                                <div className="flex">
+                                    <h2 className="tweet-title-author">The New York Times</h2>
+                                    <img src={vector2} alt="" className="w-5 h-5"/>
                                 </div>
-
+                                <p className="tweet-title-details">@nytimess</p>
                             </div>
 
-                            <div className="style">
-                                <button className="buttonTrends">Follow</button>
-
-                            </div>
-
+                            <button className="buttonTrends">Follow</button>    
+                                        
                         </div>
-                        <div className="tweet">
+
+                        <div className="flex gap-4 my-8">
                             <div className="tweet-avatar">
-                                <img src={tweetprofile2} alt="" />
+                                <img src={tweetprofile2} alt="" className="w-12 h-12" />
                             </div>
 
-                            <div className="tweet-content">
-                                <div className="tweet-body">
-
-                                    <div className="tweet-tittle">
-                                        <h2 className="tweet-title-author">CNN</h2>
-                                        <img src={vector3} alt="" />
-                                        <p className="tweet-title-details">@CNN</p>
-                                    </div>
+                            <div className="flex flex-col items-start mr-14">
+                                <div className="flex">
+                                    <h2 className="tweet-title-author">CNN</h2>
+                                    <img src={vector2} alt="" className="w-5 h-5"/>
                                 </div>
-                            </div>
-                            <div className="style">
-                                <button className="buttonTrends">Follow</button>
+                                <p className="tweet-title-details">@CNN</p>
                             </div>
 
+                            <button className="buttonTrends">Follow</button>    
+                                        
                         </div>
-                        <div className="tweet">
+
+                        <div className="flex gap-4 my-8">
                             <div className="tweet-avatar">
-                                <img src={image8} alt="" />
+                                <img src={image8} alt="" className="w-12 h-12" />
                             </div>
-                            <div className="tweet-content">
-                                <div className="tweet-body">
 
-                                    <div className="tweet-tittle">
-                                        <h2 className="tweet-title-author">Twitter</h2>
-                                        <img src={vector4} alt="" />
-                                        <p className="tweet-title-details">@Twitter</p>
-
-                                    </div>
+                            <div className="flex flex-col items-start mr-10">
+                                <div className="flex">
+                                    <h2 className="tweet-title-author">Twitter</h2>
+                                    <img src={vector2} alt="" className="w-5 h-5"/>
                                 </div>
+                                <p className="tweet-title-details">@Twitter</p>
                             </div>
-                            <div className="style-trends">
-                                <button className="buttonTrends">Follow</button>
 
-                            </div>
+                            <button className="buttonTrends">Follow</button>    
+                                        
                         </div>
+
+
+                    
 
                         <div className="style-text">
                             <p>Show more</p>
