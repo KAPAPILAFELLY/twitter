@@ -5,13 +5,14 @@ import Tweets2 from "../function tweets2/tweets2";
 import Tweets3 from "../tweets3/tweets3";
 import Tweets4 from "../tweets4/tweets4";
 import Tweets5 from "../tweets5/tweets5";
+import { Link } from "react-router-dom";
 function Tweets() {
     return (
 
         <div className="tweets">
             <div className="tweet">
                 <div className="tweet-avatar">
-                    <img src={profile} alt="" />
+                    <Link to="/Profile5"><img src={profile} alt="" /></Link>
                     {/* {Tweetprofilephoto} */}
                 </div>
                 <div className="tweet-content">

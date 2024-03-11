@@ -1,6 +1,7 @@
 import React from "react";
 // import Profilephoto from "src\images\ profile-photo.png"
 import TweetEditorForm from "../TweetEditorForm";
+import { Link } from "react-router-dom";
 
 
 function Tweeteditor() {
@@ -8,7 +9,7 @@ function Tweeteditor() {
         <>
             <div className="tweet-editor">
                 <div className="avatar">
-                    <img src="src/images/profile-photo.png" alt=" " className="avatar" />
+                    <Link to="/Profile"><img src="src/images/profile-photo.png" alt=" " className="avatar" /></Link>
                     {/* {Profilephoto} */}
                 </div>
 

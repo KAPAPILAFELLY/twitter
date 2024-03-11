@@ -65,6 +65,7 @@ export default function Trends() {
 
 
                             </div>
+                            <div className="trends">
                             <div className="trend-for">
                                 <span className="tweet-title-details">Trending in turkey</span>
                                 <img src={more4} alt="" />
@@ -72,7 +73,7 @@ export default function Trends() {
 
                             <h2 className="tweet-title-author">#SQUID</h2>
                             <span className="tweet-title-details">2,006 Tweets</span>
-
+                            </div>
                         </div>
                         <div className="style-text">
                             <p>Show more</p>
@@ -99,7 +100,7 @@ export default function Trends() {
                                         
                         </div>
 
-                        <div className="flex gap-4 my-8">
+                        <div className="flex gap-4 my-2">
                             <div className="tweet-avatar">
                                 <img src={tweetprofile2} alt="" className="w-12 h-12" />
                             </div>
@@ -116,7 +117,7 @@ export default function Trends() {
                                         
                         </div>
 
-                        <div className="flex gap-4 my-8">
+                        <div className="flex gap-4 my-2">
                             <div className="tweet-avatar">
                                 <img src={image8} alt="" className="w-12 h-12" />
                             </div>
