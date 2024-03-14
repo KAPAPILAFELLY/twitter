@@ -14,30 +14,32 @@ import profile8 from "../../images/profile-photo.png";
 export default function Sidebar() {
     return (
         <>
-            <div className="listMenu">
+            <div className="SidebarList">
+                <div className="listMenu">
                     <li> <img src={twitter} alt="" /></li>
-                <ul className="listMenu">
-                    <Link to="/"><li><img src={homeFill} alt="" /><span>Home</span></li></Link>
-                    <li><img src={explore} alt="" /><span>Explore</span></li>
-                    <li><img src={notifications} alt="" /><span>Notificatios</span></li>
-                    <li><img src={messags} alt="" /><span>Messages</span></li>
-                    <li><img src={bookmarks} alt="" /><span>Bookmarks</span></li>
-                    <li><img src={lists} alt="" /><span>Lists</span></li>
-                    <Link to="/Profile"><li><img src={profile} alt="" /><span>Profile</span></li></Link>
-                    <li><img src={more} alt="" /><span>More</span></li>
-                </ul>
-                <div className="style-Sidebar">
-                    <button className="buttonSidebar">
-                        Tweet
-                    </button>
-                </div>
-                <div className="flex items-start listMenu">
-                    <div className="flex">                     
-                        <Link><img src={profile8} alt="" className="w-14 h-14" /></Link>
+                    <ul className="listMenu">
+                        <Link to="/"><li><img src={homeFill} alt="" /><span>Home</span></li></Link>
+                        <li><img src={explore} alt="" /><span>Explore</span></li>
+                        <li><img src={notifications} alt="" /><span>Notificatios</span></li>
+                        <li><img src={messags} alt="" /><span>Messages</span></li>
+                        <li><img src={bookmarks} alt="" /><span>Bookmarks</span></li>
+                        <li><img src={lists} alt="" /><span>Lists</span></li>
+                        <Link to="/Profile"><li><img src={profile} alt="" /><span>Profile</span></li></Link>
+                        <li><img src={more} alt="" /><span>More</span></li>
+                    </ul>
+                    <div className="style-Sidebar">
+                        <button className="buttonSidebar">
+                            Tweet
+                        </button>
                     </div>
-                    <div>
-                    <h2 className="tweet-title-author">Felly Kapapila</h2>
-                        <span className="tweet-title-details flex">@KapapilaFelly</span>
+                    <div className="flex items-start listMenu">
+                        <div className="flex">
+                            <Link><img src={profile8} alt="" className="w-14 h-14" /></Link>
+                        </div>
+                        <div>
+                            <h2 className="tweet-title-author">Felly Kapapila</h2>
+                            <span className="tweet-title-details flex">@KapapilaFelly</span>
+                        </div>
                     </div>
                 </div>
             </div>

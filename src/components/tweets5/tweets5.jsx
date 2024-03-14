@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import image6 from "../../images/image 1 (4).svg";
 
 function Tweets5() {
+    const [like, setLike] = useState(15)
+    const [verify, setVerify] = useState(false)
+
+    function addtweet() {
+        if (verify!== false) {
+            setLike(like-1)
+            setVerify(false)
+            console.log('false')
+        }else{
+            setLike(like+1)
+            setVerify(true)
+            console.log('true')
+
+        }
+    }
     return (
         <div className="tweet">
             <div className="tweet-avatar">
@@ -33,8 +48,8 @@ function Tweets5() {
                             <span>785.4K</span>
                         </div>
                         <div className="tweet-action">
-                            <img src="src\images\React.svg" alt="" />
-                            <span>3.3K</span>
+                            <img src="src\images\React.svg" alt="" onClick={addtweet}/>
+                            <span>{like}</span>
                         </div>
                         <div className="tweet-action">
                             <img src="src\images\Tweet-Replies.svg" alt="" />

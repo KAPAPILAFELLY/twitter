@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import Tweetprofilephoto from "src\images\ tweet-profile-photo.png"
 import profile from "../../images/tweet-profile-photo.png";
 import Tweets2 from "../function tweets2/tweets2";
@@ -6,61 +6,29 @@ import Tweets3 from "../tweets3/tweets3";
 import Tweets4 from "../tweets4/tweets4";
 import Tweets5 from "../tweets5/tweets5";
 import { Link } from "react-router-dom";
+import Tweet from "../tweet";
 function Tweets() {
+    const [like, setLike] = useState(186)
+    const [verify, setVerify] = useState(false)
+
+    function addtweet() {
+        if (verify !== false) {
+            setLike(like - 1)
+            setVerify(false)
+            console.log('false')
+        } else {
+            setLike(like + 1)
+            setVerify(true)
+            console.log('true')
+        }
+    }
     return (
-
-        <div className="tweets">
-            <div className="tweet">
-                <div className="tweet-avatar">
-                    <Link to="/Profile5"><img src={profile} alt="" /></Link>
-                    {/* {Tweetprofilephoto} */}
-                </div>
-                <div className="tweet-content">
-                    <div className="tweet-body">
-                        <div className="tweet-title">
-
-                            <h2 className="tweet-title-author">CNN</h2>
-                            <img src="src\images\Vector.png" alt="" />
-                            <p className="tweet-title-details">@CNN</p>
-                            <p className="tweet-title-details">7m</p>
-
-
-
-                        </div>
-
-                        <div className="tweet-text">
-                            <p className="tweet-text">President Joe Biden touted new agreement reached with the European Union to ease trump-era tariffs on aluminum and steel as a "major breakthough" that would serve to both strengthen the US steel industry and combat the global climate crisis.</p>
-                        </div>
-                    </div>
-
-                    <div className="tweet-actions">
-                        <div className="tweet-action">
-                            <img src="src\images\Reply.svg" alt="" />
-                            <span>57</span>
-                        </div>
-                        <div className="tweet-action">
-                            <img src="src\images\Retweet.svg" alt="" />
-                            <span>144</span>
-                        </div>
-                        <div className="tweet-action">
-                            <img src="src\images\React.svg" alt="" />
-                            <span>187</span>
-                        </div>
-                        <div className="tweet-action">
-                            <img src="src\images\Tweet-Replies.svg" alt="" />
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-            <Tweets2 />
-            <Tweets3 />
-            <Tweets4 />
-            <Tweets5 />
+        <div>
+            <Tweet titleAuthor="CNN" imagesAuthor="src\images\Vector.png" titleDetails="@CNN . 7m" reply="54" retweet="14" like="186" tweet="45" tweetText="President Joe Biden touted new agreement reached with the European Union to ease trump-era tariffs on aluminum and steel as a major breakthough that would serve to both strengthen the US steel industry and combat the global climate crisis" imagesAvatar="src\images\tweet-profile-photo.png" />
+            <Tweet titleAuthor="The New York" imagesAuthor="src\images\Vector.png" titleDetails="@nytimes . 2h" reply="19" retweet="48" like="181" tweet="30" tweetText="Gardenig boomed during the pandemic. Six Black writers share how has helped them re-establish, and reimagine, a connection to cultivation and the land." imagesAvatar="src\images\image 1 (3).svg" tweetImage="src\images\tweet-image.png" />
+            <Tweet titleAuthor="Twetter" imagesAuthor="src\images\Vector.png" titleDetails="@Twetter . oct 29" reply="6.6k" retweet="36.8k" like="268" tweet="25" tweetText="BIG NEWs lol jk still Twetter" imagesAvatar="src\images\image 1 (4).svg" tweetImage="" />
+            <Tweet titleAuthor="Twetter" imagesAuthor="src\images\Vector.png" titleDetails="@Twetter . oct 29" reply="118.4k" retweet="84.7k" like="10" tweet="50" tweetText="hello literally everyone" imagesAvatar="src\images\image 1 (4).svg" tweetImage="" />
+            <Tweet titleAuthor="Tweeter" imagesAuthor="src\images\Vector.png" titleDetails="@Twetter . oct 29" reply="118.7" retweet="785.4" like="17" tweet="33" tweetImage="src\images\tweet-image.png" tweetText="hello literally everyone" imagesAvatar="src\images\image 1 (4).svg" />
         </div>
 
     )

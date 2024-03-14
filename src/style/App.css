@@ -203,7 +203,10 @@ body{
     justify-content: center;
     gap: 20px;
 }
-
+.listMenu{
+    position: sticky;
+    top: 0;
+}
 .listMenu li {
     margin: 1.5rem 1rem;
     font-size: 1rem;
@@ -217,7 +220,12 @@ body{
     text-align: left;   
     justify-content: left;
     font-family: Arial, sans-serif;
-   
+    
+
+}
+
+.SidebarList{
+    position: sticky;
 }
 .Sidebar{
     justify-content: left;
