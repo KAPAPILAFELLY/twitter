@@ -3,13 +3,14 @@ import TweetAction from "./tweetAction"
 import TweetImage from "./tweetImage"
 import TweetText from "./tweetText"
 import Avatar from "./avatar"
+import { Link } from "react-router-dom"
 
 
 function Tweet(props) {
 
     return (
         <div className="tweet">
-            <Avatar imagesAvatar={props.imagesAvatar} />
+            <Link to={props.lien}><Avatar imagesAvatar={props.imagesAvatar} /></Link>
             <div className="tweet-content">
                 <div className="tweet-body">
                     <TweetTitle titleAuthor={props.titleAuthor} imagesVector={props.imagesAuthor} titleDetails={props.titleDetails} />
